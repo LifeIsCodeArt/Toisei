@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tosei</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="overlayOff" id="over"></div>
+<div class="main-wrapper">
+<div class="burger">
+    <div class="burger-icon">
+        <img src="icons/Tosei-icon.png" alt="#">
+    </div>
+    <ul class="burger-bars chopSue">
+        <li class="burger-bars__item chopSue"><a href="#" class="burger-bars__link">Услуги</a></li>
+        <li class="burger-bars__item chopSue"><a href="#cards" class="burger-bars__link">Каталог техники</a></li>
+        <li class="burger-bars__item chopSue"><a href="#" class="burger-bars__link">Аукционы</a></li>
+        <li class="burger-bars__item chopSue"><a href="#" class="burger-bars__link">Информация</a></li>
+        <li class="burger-bars__item chopSue"><a href="#" class="burger-bars__link">О нас</a></li>
+        <li class="burger-bars__item chopSue"><a href="#benefits" class="burger-bars__link">Отзывы</a></li>
+        <li class="burger-bars__item chopSue"><a href="#" class="burger-bars__link">Контакты</a></li>
+    </ul>
+    <div class="social chopSue">
+        <div class="social-block">
+        <div class="social-block-whatsapp">
+            <img src="icons/watsapp.png" alt="#">
+        </div>
+        <div class="social-block-instagram">
+            <img src="icons/instagramm.png" alt="#">
+        </div>
+        <div class="social-block-youtube">
+            <img src="icons/youtube.png" alt="#">
+        </div>
+        </div>
+    </div>
+</div>
+<div class="main-block">
+    <div class="header">
+        <div class="header-text">
+            Автомобили из Японии с <br>
+            доставокй по всему Казахстану
+        </div>
+        <div class="header-phone">
+            <span class="header-phone__red chopSue"><a href="+88002507807" class="phone-red__link"></a>8-800-250-78-07</span><br>
+            Бесплатный звонок по всему Казахстану
+        </div>
+    </div>
+    <div class="underheader-picture">
+        <div class="picture-text">
+            Доставим любую технику из<br>
+            Японии за 3 недели
+        </div>
+    </div>
+    <div class="search-form">
+        <div class="search-form__checkboxes">
+            <input type="checkbox" id="fullOption" value="Автомат" checked class="input-checkbox"><span class="input-checkbox__text">Полная пошлина</span>
+            <input type="checkbox" id="halfOption" value="Полуавтомат" class="input-checkbox"><span class="input-checkbox__text">Распил или конструктор</span>
+        </div>
+        <div class="search-form__types">
+            <div class="car-type global-search">
+                <div class="search-text">Тип техники</div>
+                <select id="selectType" class="search">
+                    <option value="val1">Не выбрано</option>
+                    <option value="val2">value2</option>
+                </select>
+            </div>
+            <div class="car-custom global-search">
+                <div class="search-text">Производитель</div>
+                <select id="selectCustom" class="search">
+                    <option value="val1">Не выбрано</option>
+                    <option value="val2">value2</option>
+                </select>
+            </div>
+            <div class="price-difference global-search">
+                <div class="search-text">Марка</div>
+                <select id="selectPrice" class="search">
+                    <option value="val1">Не выбрано</option>
+                    <option value="val2">value2</option>
+                </select>
+            </div>
+            <div class="issue-year global-search-year">
+                <div class="search-text">Год выпуска</div>
+                <div class="from-to__search">
+                    <select id="selectYearFrom" class="search-from">
+                        <option value="val1">От</option>
+                        <option value="val2">value2</option>
+                    </select>
+                    <select id="selectYearTo" class="search-to">
+                    <option value="val1">До</option>
+                    <option value="val2">value2</option>
+                </select>
+                </div>
+            </div>
+            <div class="search-form__button">
+                <button class="search-find" id="searchButton">Найти</button>
+                <button class="search-find" id="resetButton">Сбросить</button>
+            </div>
+        </div>
+        <div class="search-total">
+            <div class="total-text">Автомобилей в наличии: <span class="red-text" id="total-number">256</span></div>
+            <select id="extendedSearch" class="extendedSearch">
+                <option value="val1">Расширенный поиск</option>
+                <option value="val2">value2</option>
+            </select>
+        </div>
+    </div>
+    <div class="popular-cars">
+        <div class="popular-cars__text">
+            Популярные автомобили
+        </div>
+        <div class="popular-cars__variants">
+            <input type="radio" name="carCases" id="popularAny" class="radio-choice"><span class="cars-filter__choice">Любые</span>
+            <input type="radio" name="carCases" id="popularStock" class="radio-choice"><span class="cars-filter__choice">В наличии</span>
+            <input type="radio" name="carCases" id="popularDeal" class="radio-choice"><span class="cars-filter__choice">Под заказ</span>
+        </div>
+    </div>
+    <div class="cards chopSue" id="cards">
+        <div class="card_item">
+            <div class="card-content">
+               <div class="card-content__image">
+                   <img src="pics/Red.png" alt="#">
+               </div>
+                <div class="card-content__partOne">
+                    <div class="content-carName">Honda Fit</div>
+                    <div class="card-info__item"><span class="card-info__grey">Объем двигателя: </span><span class="card-info__text">1,2 л.с.</span></div>
+                    <div class="card-info__item"><span class="card-info__grey">Год: </span><span class="card-info__text">2015 г.</span></div>
+                    <div class="card-info__item"><span class="card-info__grey">Пробег: </span><span class="card-info__text">34 000 км</span></div>
+                    <div class="card-info__item">Под полную пошлину</div>
+                </div>
+                <div class="card-content__partTwo">
+                <div class="card-info__item"><span class="card-info__grey">Привод: </span><span class="card-info__text">Задний</span></div>
+                <div class="card-info__item"><span class="card-info__grey">КПП: </span><span class="card-info__text">Автомат</span></div>
+            </div>
+            <div class="card-status">
+            <div class="card-info__grey">Стоимость во </div>
+            <div class="content-carName">100 000 гривень</div>
+            <div class="card-status__button"><button class="status_button status_button__green">В наличии</button> </div>
+            </div>
+            </div>
+        </div>
+        <div class="card_item">
+            <div class="card-content">
+                <div class="card-content__image">
+                    <img src="pics/Grey.png" alt="#">
+                </div>
+                <div class="card-content__partOne">
+                    <div class="content-carName">BMW - X5 2005</div>
+                    <div class="card-info__item"><span class="card-info__grey">Объем двигателя: </span><span class="card-info__text">230 л.с.</span></div>
+                    <div class="card-info__item"><span class="card-info__grey">Год: </span><span class="card-info__text">2005 г.</span></div>
+                    <div class="card-info__item"><span class="card-info__grey">Пробег: </span><span class="card-info__text">110 000 км</span></div>
+                    <div class="card-info__item">Под полную пошлину</div>
+                </div>
+                <div class="card-content__partTwo">
+                    <div class="card-info__item"><span class="card-info__grey">Привод: </span><span class="card-info__text">Полный</span></div>
+                    <div class="card-info__item"><span class="card-info__grey">КПП: </span><span class="card-info__text">Полуавтомат</span></div>
+                </div>
+                <div class="card-status">
+                    <div class="card-info__grey">Стоимость во</div>
+                    <div class="content-carName">100 000 гривень</div>
+                    <div class="card-status__button"><button class="status_button status_button__yellow">Под Заказ</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="card_item">
+            <div class="card-content">
+                <div class="card-content__image">
+                    <img src="pics/Blue.png" alt="#">
+                </div>
+                <div class="card-content__partOne">
+                    <div class="content-carName">Toyota Prius</div>
+                    <div class="card-info__item"><span class="card-info__grey">Объем двигателя: </span><span class="card-info__text">109 л.с.</span></div>
+                    <div class="card-info__item"><span class="card-info__grey">Год: </span><span class="card-info__text">2009 г.</span></div>
+                    <div class="card-info__item"><span class="card-info__grey">Пробег: </span><span class="card-info__text">57 000 км</span></div>
+                    <div class="card-info__item">Под полную пошлину</div>
+                </div>
+                <div class="card-content__partTwo">
+                    <div class="card-info__item"><span class="card-info__grey">Привод: </span><span class="card-info__text">Передний</span></div>
+                    <div class="card-info__item"><span class="card-info__grey">КПП: </span><span class="card-info__text">Автомат</span></div>
+                </div>
+                <div class="card-status">
+                    <div class="card-info__grey">Стоимость во</div>
+                    <div class="content-carName">100 000 гривень</div>
+                    <div class="card-status__button"><button class="status_button status_button__red">Нет в наличии</button> </div>
+                </div>
+            </div>
+        </div>
+        <div class="card_item">
+            <div class="card-content">
+                <div class="card-content__image">
+                    <img src="pics/Blue.png" alt="#">
+                </div>
+                <div class="card-content__partOne">
+                    <div class="content-carName">Toyota Prius</div>
+                    <div class="card-info__item"><span class="card-info__grey">Объем двигателя: </span><span class="card-info__text">109 л.с.</span></div>
+                    <div class="card-info__item"><span class="card-info__grey">Год: </span><span class="card-info__text">2009 г.</span></div>
+                    <div class="card-info__item"><span class="card-info__grey">Пробег: </span><span class="card-info__text">57 000 км</span></div>
+                    <div class="card-info__item">Под полную пошлину</div>
+                </div>
+                <div class="card-content__partTwo">
+                    <div class="card-info__item"><span class="card-info__grey">Привод: </span><span class="card-info__text">Передний</span></div>
+                    <div class="card-info__item"><span class="card-info__grey">КПП: </span><span class="card-info__text">Автомат</span></div>
+                </div>
+                <div class="card-status">
+                    <div class="card-info__grey">Стоимость во</div>
+                    <div class="content-carName">100 000 гривень</div>
+                    <div class="card-status__button"><button class="status_button status_button__red">Нет в наличии</button> </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="card-button" id="hideShowButton">Скрыть</button>
+</div>
+    <div class="benefits chopSue">
+        <div class="benefit-header">Наши преимущества</div>
+        <div class="benefit-content">
+            <div class="benefit-info__item chopSue">
+                <div class="benefit-logo">
+                    <img src="icons/World.png" alt="#">
+                </div>
+                <div class="benefit-text">
+                    <div class="benefit-text__header">
+                        20 лет на рынке
+                    </div>
+                    <div class="benefit-text__common">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam asperiores ex neque nesciunt veritatis? Ad aliquam consectetur corporis illum soluta?
+                    </div>
+            </div>
+            </div>
+            <div class="benefit-info__item chopSue">
+                <div class="benefit-logo">
+                    <img src="icons/World.png" alt="#">
+                </div>
+                <div class="benefit-text">
+                    <div class="benefit-text__header">
+                        20 лет на рынке
+                    </div>
+                    <div class="benefit-text__common">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam asperiores ex neque nesciunt veritatis? Ad aliquam consectetur corporis illum soluta?
+                    </div>
+                </div>
+            </div>
+            <div class="benefit-info__item chopSue">
+                <div class="benefit-logo">
+                    <img src="icons/World.png" alt="#">
+                </div>
+                <div class="benefit-text">
+                    <div class="benefit-text__header">
+                        20 лет на рынке
+                    </div>
+                    <div class="benefit-text__common">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam asperiores ex neque nesciunt veritatis? Ad aliquam consectetur corporis illum soluta?
+                    </div>
+                </div>
+            </div>
+            <div class="benefit-info__item chopSue">
+                <div class="benefit-logo">
+                    <img src="icons/World.png" alt="#">
+                </div>
+                <div class="benefit-text">
+                    <div class="benefit-text__header">
+                        20 лет на рынке
+                    </div>
+                    <div class="benefit-text__common">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam asperiores ex neque nesciunt veritatis? Ad aliquam consectetur corporis illum soluta?
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="benefit-header" id="benefits">Отзывы</div>
+        <div class="benefit-reviews">
+            <div class="benefit-review__item chopSue">
+                <div class="review-video">
+                    <img src="icons/review-1.jpg" alt="#">
+                </div>
+                <div class="review-stars">
+                    <img src="icons/golden-stars.png" alt="#">
+                </div>
+                <div class="review-name">
+                    Генадий Сергеевич
+                </div>
+                <div class="review-car">
+                    Toyota Allion
+                </div>
+            </div>
+            <div class="benefit-review__item chopSue">
+                <div class="review-video">
+                    <img src="icons/review-1.jpg" alt="#">
+                </div>
+                <div class="review-stars">
+                    <img src="icons/golden-stars.png" alt="#">
+                </div>
+                <div class="review-name">
+                    Генадий Сергеевич
+                </div>
+                <div class="review-car">
+                    Toyota Allion
+                </div>
+            </div>
+            <div class="benefit-review__item chopSue">
+                <div class="review-video">
+                    <img src="icons/review-1.jpg" alt="#">
+                </div>
+                <div class="review-stars">
+                    <img src="icons/golden-stars.png" alt="#">
+                </div>
+                <div class="review-name">
+                    Генадий Сергеевич
+                </div>
+                <div class="review-car">
+                    Toyota Allion
+                </div>
+            </div>
+            <div class="benefit-review__item chopSue">
+                <div class="review-video">
+                    <img src="icons/review-1.jpg" alt="#">
+                </div>
+                <div class="review-stars">
+                    <img src="icons/golden-stars.png" alt="#">
+                </div>
+                <div class="review-name">
+                    Генадий Сергеевич
+                </div>
+                <div class="review-car">
+                    Toyota Allion
+                </div>
+            </div>
+        </div>
+        <button class="benefit-button">Показать ещё</button>
+    </div>
+    <div class="deal-block">
+        <div class="deal-left">
+            <div class="deal-left__image">
+
+            </div>
+        </div>
+        <div class="deal-right">
+            <div class="deal-right__text">
+                Как происходит покупка
+            </div>
+            <div class="benefit-content">
+                <div class="benefit-info__item">
+                    <div class="benefit-logo">
+                        <img src="icons/World.png" alt="#">
+                    </div>
+                    <div class="benefit-text">
+                        <div class="benefit-text__header">
+                            20 лет на рынке
+                        </div>
+                        <div class="benefit-text__common">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam asperiores ex neque nesciunt veritatis? Ad aliquam consectetur corporis illum soluta?
+                        </div>
+                    </div>
+                </div>
+                <div class="benefit-info__item">
+                    <div class="benefit-logo">
+                        <img src="icons/World.png" alt="#">
+                    </div>
+                    <div class="benefit-text">
+                        <div class="benefit-text__header">
+                            20 лет на рынке
+                        </div>
+                        <div class="benefit-text__common">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam asperiores ex neque nesciunt veritatis? Ad aliquam consectetur corporis illum soluta?
+                        </div>
+                    </div>
+                </div>
+                <div class="benefit-info__item">
+                    <div class="benefit-logo">
+                        <img src="icons/World.png" alt="#">
+                    </div>
+                    <div class="benefit-text">
+                        <div class="benefit-text__header">
+                            20 лет на рынке
+                        </div>
+                        <div class="benefit-text__common">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam asperiores ex neque nesciunt veritatis? Ad aliquam consectetur corporis illum soluta?
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    <div class="arrow arrow-left" id="leftArrow">
+        <img src="icons/icon-next.png" alt="#">
+    </div>
+    <div class="gallery-tablet" id="gallery">
+        <div class="first-block">
+            <img src="icons/photo_2023-02-17_08-32-37.jpg" alt="1" class="pictureUpp ">
+        </div>
+        <div class="first-block ">
+            <img src="icons/2.jpg" alt="2" class="pictureUpp">
+        </div>
+        <div class="first-block">
+            <img src="icons/3.jpg" alt="3" class="pictureUpp">
+        </div>
+
+    </div>
+    <div class="arrow arrow-right" id="rightArrow">
+        <img src="icons/icon-next.png" alt="#">
+    </div>
+    </div>
+    </div>
+</div>
+ <script src="js/script.js"></script>
+</body>
+</html>

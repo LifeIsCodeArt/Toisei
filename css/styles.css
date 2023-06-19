@@ -1,0 +1,534 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+a,a:active,a:focus,a:hover,
+a:link{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+.main-wrapper{
+    width: 1280px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.burger{
+    height: 749px;
+    width: 200px;
+    background: #F7F7F9;
+
+}
+.burger-icon{
+    padding: 28px 0 40px 0;
+}
+.burger-bars{
+    margin-bottom: 40px;
+}
+.burger-bars__item{
+    margin-bottom: 10px;
+    padding: 8px 0 8px 26px;
+}
+.burger-bars__link{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+.social{
+    height: 283px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.social-block{
+    margin-bottom: 12px;
+    margin-right: 38px;
+    width: 112px;
+    height: 32px;
+    display: flex;
+}
+.social-block-instagram{
+    margin: 0 8px;
+}
+.main-block{
+    width: 1080px;
+}
+.header{
+    padding: 30px 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.header-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+.header-phone{
+    text-align: right;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+.header-phone__red{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #CD0000;
+}
+.underheader-picture{
+    height: 316px;
+    background: url("../pics/mainpic-cars.png");
+    position: relative;
+}
+.picture-text{
+    padding-top: 62px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 51px;
+    color: #FFFFFF;
+}
+.search-form__checkboxes{
+    width: 997px;
+    padding-bottom: 24px;
+}
+.input-checkbox{
+    accent-color: #e74c3c;
+    margin-right: 8px;
+}
+.checkbox-section{
+    height: 18px;
+}
+.input-checkbox__text{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    color: #000000;
+    margin-right: 32px;
+}
+.search{
+    width: 100%;
+    height: 32px;
+    background-color: #F1F1F1;
+    border-radius: 2px;
+}
+.global-search{
+    width: 190px;
+    height: 57px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 16px;
+}
+.global-search-year{
+    width: 210px;
+    height: 57px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 16px;
+}
+.search-form__types{
+    height: 59px;
+    display: flex;
+    margin: 24px 0;
+}
+.search-form{
+    height: 204px;
+    width: 997px;
+    padding: 24px 24px;
+    position: absolute;
+    top: 320px;
+    z-index: 3;
+    background-color: #f1e0e0;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+.search-form__button{
+    height: 57px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.search-find{
+    padding: 6px 16px;
+    background-color: #CD0000;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: #FFFFFF;
+    border: none;
+}
+.search-from, .search-to{
+    width: 100px;
+    height: 32px;
+    background-color: #F1F1F1;
+    border-radius: 2px;
+}
+.search-text{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+}
+.search-total{
+    padding-top: 20px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.extendedSearch{
+    width: 201px;
+    height: 32px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #CD0000;
+    padding: 6px 10px;
+}
+.total-text{
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #808080
+}
+.red-text{
+    color:#CD0000;
+}
+.popular-cars{
+    margin: 185px 0 24px 58px;
+    width: 344px;
+    height: 62px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.popular-cars__text{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+.cars-filter__choice{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    color: #000000;
+    margin: 0 20px 0 8px;
+}
+.card-content{
+    display: flex;
+    justify-content: center;
+    border-radius:3px;
+    padding: 16px 32px 16px 16px;
+}
+.card-content__partOne{
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    width: 220px;
+    margin-left: 32px;
+}
+.card-content__partTwo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50px;
+    width: 148px;
+    padding: 44px 0 62px 0;
+    margin-right: 69px;
+}
+
+.content-carName{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
+    margin: 8px 0;
+}
+.card-info__grey{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #8B8B8B;
+}
+.card-info__item{
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+.card-info__text{
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+.card_item{
+    width: 997px;
+    height: 180px;
+    margin: 0 0 8px 24px;
+    border: 1px solid #E2E2E2;
+    transform: translateX(0%) translateY(0%);
+    transition: 0.6s ease all;
+    transition-delay: 400ms;
+}
+
+.hideInterface{
+    position: absolute;
+    transition-delay: 400ms;
+    transition: all 1s;
+}
+.hideInterface:nth-child(1){
+    transform: translateX(-320%) ;
+    transition: 0.6s ease all;
+
+}
+.hideInterface:nth-child(2){
+    transform: translateX(320%) ;
+    transition: 0.6s ease all;
+
+}
+.hideInterface:nth-child(3){
+    transform: translateX(-320%) ;
+
+
+}
+.hideInterface:nth-child(4){
+    transform: translateX(320%) ;
+    transition: 0.6s ease all;
+
+}
+.card-status{
+    width: 208px;
+    height: 148px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+.status_button{
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 14px;
+    color: #FFFFFF;
+    width: 94px;
+    height: 25px;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+.status_button__green{
+    background-color: #73DB43;
+}
+.status_button__yellow{
+    background-color: #EBB428;
+}
+.status_button__red{
+    background-color: #DB3138;
+    height: 35px;
+}
+.cards{
+    margin: 24px 0 71px 0;
+    position: relative;
+}
+.card-button{
+    width: 999px;
+    height: 42px;
+    margin-left: 24px;
+    cursor: pointer;
+}
+.benefits{
+    width: 997px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+    margin-bottom: 63px;
+}
+.benefit-header{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    text-align: center;
+}
+.benefit-content{
+    margin: 28px 0 19px 0;
+    width: 997px;
+    display: flex;
+    justify-content: space-between;
+}
+.benefit-info__item{
+    width: 210px;
+    height: 210px;
+}
+
+.benefit-info__item:nth-child(1){
+    transition-delay: 200ms;
+}
+.benefit-info__item:nth-child(2){
+    transition-delay: 400ms;
+}
+.benefit-info__item:nth-child(3){
+    transition-delay: 600ms;
+}
+.benefit-info__item:nth-child(4){
+    transition-delay: 800ms;
+}
+.benefit-review__item:nth-child(1){
+    transition-delay: 200ms;
+}
+.benefit-review__item:nth-child(2){
+    transition-delay: 400ms;
+}
+.benefit-review__item:nth-child(3){
+    transition-delay: 600ms;
+}
+.benefit-review__item:nth-child(4){
+    transition-delay: 800ms;
+}
+.benefit-text__header{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 110%;
+    color: #000000;
+    margin: 8px 0 16px 0;
+}
+.benefit-text__common{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #8B8B8B;
+}
+.benefit-button{
+    width: 999px;
+    height: 42px;
+    cursor: pointer;
+}
+.benefit-review__item{
+    width: 202px;
+    height: 211px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+}
+.benefit-reviews{
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.review-name{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin: 4px 0;
+}
+.review-stars{
+    margin-top: 16px;
+}
+.review-car{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: #8B8B8B;
+}
+.chopSue{
+   opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.undoSue{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0%) translateY(0%);
+}
+.header-phone__red:nth-child(n){
+    transition-delay: 800ms;
+}
+.gallery-tablet{
+    width: 1020px;
+    height: 280px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.pictureUpp{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.pictureFullSize{
+
+}
+
+.first-block{
+    min-width: 300px;
+    height: 260px;
+    cursor: pointer;
+    transform: translate(0%, 0%);
+    transition: 0.7s ease all;
+}
+.fullSize{
+    position: absolute;
+    width: 1020px;
+    height: 1000px;
+    z-index: 4;
+    transform: translateY(-90%);
+    border: 10px solid #FFFFFF;
+    transition: 0.7s ease all;
+}
+.overlayOff{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0,0,0,.56);
+    visibility: hidden;
+}
+.overlayOn{
+    visibility: visible;
+    transition: 0.5s ease all;
+    z-index: 2;
+}
+.arrow{
+    width: 300px;
+    height: 700px;
+    position: absolute;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 3;
+}
+.arrow-left{
+    top: 150%;
+    left: 0;
+    transform: rotate(0.5turn);
+}
+.arrow-right{
+    top: 150%;
+    right: 0;
+}
+.arrow-visible{
+    visibility: visible;
+}
